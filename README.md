@@ -160,7 +160,7 @@ Some parts may still be evolving or incomplete.
 
 ## License
 
-[MIT LICENSE]
+[GNU GENERAL PUBLIC LICENSE]
 
 ---
 
