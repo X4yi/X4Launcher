@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=X4Launcher
+Comment=A modern Minecraft Launcher
+Exec=X4Launcher
+Icon=x4launcher
+Terminal=false
+Categories=Game;
+Keywords=minecraft;launcher;
+StartupWMClass=X4Launcher
