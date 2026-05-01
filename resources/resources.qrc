@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/cat_icon.png</file>
+        <file>icons/chicken_icon.png</file>
+        <file>icons/creeper_icon.png</file>
+        <file>icons/fabric_icon.png</file>
+        <file>icons/forge_icon.png</file>
+        <file>icons/goat_icon.png</file>
+        <file>icons/steve_icon.png</file>
+        <file>icons/vanilla_icon.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,33 @@
+// X4Launcher Windows Application Resource
+// Provides the application icon and version information for the .exe
+
+IDI_ICON1 ICON "icons/x4launcher.ico"
+
+1 VERSIONINFO
+ FILEVERSION 0,1,0,0
+ PRODUCTVERSION 0,1,0,0
+ FILEFLAGSMASK 0x3fL
+ FILEFLAGS 0x0L
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "040904E4"
+    BEGIN
+      VALUE "CompanyName", "X4"
+      VALUE "FileDescription", "X4Launcher - A Modern Minecraft Launcher"
+      VALUE "FileVersion", "0.1.0"
+      VALUE "InternalName", "X4Launcher"
+      VALUE "LegalCopyright", "Copyright (C) 2024-2026 X4"
+      VALUE "OriginalFilename", "X4Launcher.exe"
+      VALUE "ProductName", "X4Launcher"
+      VALUE "ProductVersion", "0.1.0"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x0409, 1252
+  END
+END

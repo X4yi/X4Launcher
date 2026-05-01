@@ -1,0 +1,65 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 20,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "base",
+      "hidden": true,
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/cmake-build-${presetName}",
+      "cacheVariables": {
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+      }
+    },
+    {
+      "name": "native-debug",
+      "inherits": "base",
+      "displayName": "Native Debug",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "X4_QT_ROOT": "$env{X4_QT_ROOT}"
+      }
+    },
+    {
+      "name": "native-release",
+      "inherits": "base",
+      "displayName": "Native Release",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "X4_QT_ROOT": "$env{X4_QT_ROOT}"
+      }
+    },
+    {
+      "name": "windows-release",
+      "inherits": "base",
+      "displayName": "Windows Release (MinGW-w64)",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/cmake/mingw-w64.cmake",
+        "X4_MINGW_TRIPLET": "$env{X4_MINGW_TRIPLET}",
+        "X4_MINGW_ROOT": "$env{X4_MINGW_ROOT}",
+        "X4_MINGW_BIN_DIR": "$env{X4_MINGW_BIN_DIR}",
+        "X4_QT_ROOT": "$env{X4_QT_ROOT}",
+        "X4_QT_HOST_PATH": "$env{X4_QT_HOST_PATH}"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "native-debug",
+      "configurePreset": "native-debug"
+    },
+    {
+      "name": "native-release",
+      "configurePreset": "native-release"
+    },
+    {
+      "name": "windows-release",
+      "configurePreset": "windows-release"
+    }
+  ]
+}
